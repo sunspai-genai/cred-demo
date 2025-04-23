@@ -1,0 +1,7 @@
+.RecommendedTab {
+  label {
+    input:checked + span {
+      background-color: var(--color-primary);
+    }
+  }
+}

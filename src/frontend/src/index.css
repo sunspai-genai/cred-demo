@@ -1,0 +1,135 @@
+@import "tailwindcss";
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+}
+@theme {
+  --default-font-family: "Poppins", sans-serif;
+  --color-primary: #00ae95;
+  --color-primary-light: #59e9d4;
+  --color-primary-deep: #144b43;
+  --color-secondary: #fd6593;
+}
+
+@layer components {
+  .btn-primary {
+    border-radius: calc(infinity * 1px);
+    background-color: var(--color-primary);
+    border: 1px solid transparent;
+    border-color: var(--color-primary);
+    padding-inline: --spacing(6);
+    padding-block: --spacing(3);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+    box-shadow: var(--shadow-md);
+    &:hover {
+      @media (hover: hover) {
+        background-color: transparent;
+      }
+    }
+  }
+  .btn-primary-outline {
+    border-radius: calc(infinity * 1px);
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-color: var(--color-primary);
+    padding-inline: --spacing(6);
+    padding-block: --spacing(3);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+    box-shadow: var(--shadow-md);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-primary);
+      }
+    }
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #123937;
+  scroll-behavior: smooth;
+}
+a {
+  transition: ease 0.4s;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  transition: ease 0.4s;
+}
+
+select {
+  /* Arrow */
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2300ae95%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--color-primary);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0d3933;
+  border: 0;
+  border-radius: 6px;
+}
+
+.theme-gradient {
+  background: linear-gradient(45deg, #0f2e2c, #184442);
+}
+
+.nav-style {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: #83c0bd;
+  padding: 15px 0 15px 30px;
+  border-right: 5px solid transparent;
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+.nav-style:hover {
+  color: #fff;
+}
+.nav-style.active {
+  color: #fff;
+  background-color: #1b5e5b;
+}
+
+.nav-style.active::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 100%;
+  background: #38a9a3;
+  left: 100%;
+  top: 0;
+}
+.title-one {
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 35px;
+  font-weight: 700;
+  position: relative;
+}
+
+.slick-dots li button:before {
+  font-size: 1rem !important;
+  color: #fff !important;
+}
+.slick-dots li.slick-active button:before {
+  color: var(--color-primary-light) !important;
+}
+
+

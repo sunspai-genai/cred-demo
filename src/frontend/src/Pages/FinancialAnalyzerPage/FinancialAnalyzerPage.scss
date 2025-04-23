@@ -1,0 +1,116 @@
+.report {
+  code {
+    font-family: var(--font-poppins);
+    display: block;
+    white-space: normal;
+    max-width: 100%;
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+  .gu {
+    font-family: var(--font-roboto);
+    font-size: 1.6rem;
+    display: block;
+    font-weight: 600;
+    padding-top: 2rem;
+        color: var(--color-secondary);
+
+
+  }
+  .gs {
+    font-family: var(--font-roboto);
+    font-size: 1.2rem;
+    display: block;
+    font-weight: 600;
+    padding-top: 2rem;
+        color: var(--color-secondary);
+
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+    padding-top: 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+    font-family: var(--font-roboto);
+    color: var(--color-secondary);
+  }
+  h2 {
+    font-size: 1.4rem;
+    font-family: var(--font-roboto);
+    color: var(--color-secondary);
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2rem;
+    * {
+      color: #fff !important;
+    }
+    thead {
+      white-space: nowrap;
+      strong,
+      th {
+        font-weight: 500 !important;
+        font-family: var(--font-roboto);
+      }
+    }
+  }
+
+  table td,
+  table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  table tr:nth-child(even) {
+    background-color: #5c8677;
+  }
+
+  table {
+    tbody {
+      font-size: 90%;
+      tr:hover {
+        background-color: #fff;
+        cursor: pointer;
+        * {
+          color: var(--color-primary) !important;
+        }
+      }
+    }
+  }
+
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+  }
+  p:not(:has(strong)) {
+    margin-bottom: 1rem;
+  }
+  p {
+    strong {
+      font-size: 1.1rem;
+      font-family: var(--font-roboto);
+      color: var(--color-secondary);
+    }
+  }
+  p + ul {
+    margin-bottom: 4rem;
+  }
+  ul {
+    list-style: circle;
+    padding-left: 2rem;
+
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}
